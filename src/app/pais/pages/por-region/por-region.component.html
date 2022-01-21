@@ -1,0 +1,14 @@
+<div class="d-flex m-2">
+  <button *ngFor="let region of regiones"
+          class="btn mx-1"
+          [ngClass]="getClassButton(region)"
+          (click)="buscar(region)">
+    {{region | titlecase}}
+  </button>
+</div>
+<div>
+  <app-warning-search *ngIf="isError" [busqueda]="termino"></app-warning-search>
+  <div>
+    <app-pais-table [paises]="paises" *ngIf="!isError"></app-pais-table>
+  </div>
+</div>

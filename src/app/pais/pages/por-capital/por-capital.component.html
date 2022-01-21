@@ -1,0 +1,12 @@
+<div  class="topbar">
+  <div class="w-50">
+    <app-in-search (onBuscar)="buscar($event)" (onDeboucer)="recomendar($event)"></app-in-search>
+    <app-suggestion-nav class="pos-suggestion" [visible]="visibleSuggestion"></app-suggestion-nav>
+  </div>
+</div>
+<div>
+  <app-warning-search *ngIf="isError" busqueda="termino"></app-warning-search>
+  <div>
+    <app-pais-table [paises]="paises" *ngIf="!isError"></app-pais-table>
+  </div>
+</div>

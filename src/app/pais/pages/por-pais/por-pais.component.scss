@@ -1,0 +1,13 @@
+.topbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6851F3;
+  min-height: var(--barTop-height);
+  height: var(--barTop-height);
+}
+.pos-suggestion{
+  display: block;
+  position: relative;
+  width: 100%;
+}

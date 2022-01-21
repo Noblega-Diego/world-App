@@ -1,0 +1,8 @@
+.subcontent{
+  min-height: 100vh;
+  height: max-content;
+  display: flex;
+}
+.principal-content{
+  max-width: calc(100vw - 200px);
+}

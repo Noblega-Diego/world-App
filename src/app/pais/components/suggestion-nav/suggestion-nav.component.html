@@ -1,0 +1,5 @@
+<ul class="list-group position-absolute top-0 w-100 my-1"
+    [class]="classVisibility">
+  <li *ngFor="let pais of paises"
+      class="list-group-item"><a [routerLink]="['/pais',pais.cca2]">{{pais.name.common}}</a></li>
+</ul>

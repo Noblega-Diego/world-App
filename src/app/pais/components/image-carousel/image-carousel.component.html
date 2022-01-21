@@ -1,0 +1,13 @@
+<div class="img-carousel">
+  <div class="img-carousel-content" #contenedor>
+    <div class="content-foto" *ngFor="let image of images">
+      <img src="{{image.urls.regular}}" alt="">
+    </div>
+  </div>
+</div>
+<div>
+  <nav>
+    <button class="btn btn-outline-dark m-2" (click)="moverAtras(0)"><-</button>
+    <button class="btn btn-outline-dark m-2" (click)="moverAtras(1)">-></button>
+  </nav>
+</div>

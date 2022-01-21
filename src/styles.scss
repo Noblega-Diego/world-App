@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  min-height: 100vh;
+}
+:root{
+  --barTop-height:50px;
+  --col-primary:#28AFB0;
+  --col-secondary:#15203D;
+}
+

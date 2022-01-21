@@ -1,0 +1,30 @@
+<div *ngIf="pais != null" class="d-flex flex-column">
+  <div class="informacion-pais">
+    <h1 class="title">{{pais.name.common}}</h1>
+    <hr>
+    <div class="d-flex">
+      <img class="imagen-pais" [src]="pais.flags.svg" >
+      <div>
+        <h2 class="sub-title">Informacion</h2>
+        <p class="txt-bold">Capital: <span class="txt-normal">{{pais.capital}}</span></p>
+        <p class="txt-bold">Poblacion: <span class="txt-normal">{{pais.population | number}}</span></p>
+        <p class="txt-bold">Region: <span class="txt-normal">{{pais.region}}</span></p>
+      </div>
+    </div>
+    <div class="d-flex w-75 flex-wrap">
+      <span class="badge bg-primary m-1">{{pais.translations['ara']?.common}}</span>
+      <span class="badge bg-primary m-1">{{pais.translations['ces']?.common}}</span>
+      <span class="badge bg-primary m-1">{{pais.translations['sym']?.common}}</span>
+      <span class="badge bg-primary m-1">{{pais.translations['deu']?.common}}</span>
+      <span class="badge bg-primary m-1">{{pais.translations['est']?.common}}</span>
+      <span class="badge bg-primary m-1">{{pais.translations['fin']?.common}}</span>
+      <span class="badge bg-primary m-1">{{pais.translations['fra']?.common}}</span>
+      <span class="badge bg-primary m-1">{{pais.translations['hrb']?.common}}</span>
+    </div>
+  </div>
+  <div class="view-pais">
+    <h2 class="sub-title">fotos</h2>
+    <hr>
+    <app-image-carousel [images]="images"></app-image-carousel>
+  </div>
+</div>

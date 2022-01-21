@@ -1,0 +1,10 @@
+<form (ngSubmit)="propagar()" class="search w-100">
+  <input name="termino"
+         [(ngModel)]="termino"
+         (input)="teclaPrecionada()"
+         type="text"
+         class="form-control input-search"
+         autocomplete="off"
+         spellcheck="false">
+  <button class="btn-search"></button>
+</form>

@@ -1,0 +1,41 @@
+
+
+.informacion-pais{
+  padding: 8px 20px;
+  background: #F4F4F4;
+  .title{
+    color: #28AFB0;
+    font-weight: bold;
+  }
+  .sub-title{
+    font-size: 1.4em;
+    color: #281464;
+    font-weight: bold;
+  }
+  .txt-bold{
+    font-weight: bold;
+  }
+  .txt-normal{
+    font-weight: normal;
+  }
+  .imagen-pais{
+    height: 9em;
+    margin: 0px 8px 0px 0px;
+  }
+}
+.view-pais {
+  min-height: 360px;
+  height: 100%;
+  background: #6851F3;
+  padding: 8px 20px;
+
+  .sub-title{
+    font-size: 1.4em;
+    margin: 0px;
+    color: #F4F4F4;
+    font-weight: bold;
+  }
+
+}
+
+

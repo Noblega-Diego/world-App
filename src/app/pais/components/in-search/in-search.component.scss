@@ -1,0 +1,21 @@
+.search {
+  display: flex;
+  .input-search {
+    height: 34px;
+    width: 100%;
+    min-width: 200px;
+  }
+  .btn-search {
+    height: 34px;
+    min-width: 34px;
+    border: solid transparent 0px;
+    border-radius: 6px;
+    margin-left: 6px;
+
+    background: #15203D;
+    background-image: url("/assets/search.svg");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
